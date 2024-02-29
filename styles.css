@@ -1,0 +1,144 @@
+body {
+    background-color: linen;
+    font-family: Roboto;
+}
+
+h1 {
+    color: maroon;
+    margin-left: 40px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.table-overflow {
+    width: 100%;
+    border: 1px solid #CCD5E0;
+    border-radius: 8px;
+    position: relative;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    /* border: 1px solid #CCD5E0;
+    border-radius: 8px; */
+}
+
+.header-row {
+    display: table-row;
+    background: #F8F9FA;
+    border-bottom: 1px solid #CCD5E0;
+}
+
+.header-cell {
+    background: none;
+    display: table-cell;
+    padding: 12px;
+    border-bottom: 1px solid #CCD5E0;
+}
+
+.table-row {
+    display: table-row;
+    background: white;
+    position: relative;
+}
+
+.table-row:hover {
+    background-color: #F8F9FA;
+}
+
+.table-cell {
+    display: table-cell;
+    padding: 12px;
+    border-bottom: 1px solid #CCD5E0;
+}
+
+.table-row:last-of-type .table-cell {
+    border-bottom: none;
+}
+
+.header-row .header-cell:first-of-type {
+    border-radius: 8px 0 0 0;
+}
+
+.header-row .header-cell:last-of-type {
+    border-radius: 0 8px 0 0;
+}
+
+.table-row:last-of-type .table-cell:first-of-type {
+    border-radius: 0 0 0 8px;
+}
+
+.table-row:last-of-type .table-cell:last-of-type {
+    border-radius: 0 0 8px 0;
+}
+
+.table-cell.patient,
+.table-cell.office,
+.table-cell.provider {
+    min-width: 200px;
+}
+
+.hover-btns {
+    background: #F8F9FA;
+    position: absolute;
+    top: 4px;
+    right: 12px;
+    display: none;
+    gap: 4px;
+}
+
+.action-btn-container {
+    padding: 8px;
+    background-color: #F8F9FA;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.action-btn-container:hover {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .15);
+    cursor: pointer;
+}
+
+.action-btn-container:hover>i {
+    color: blue;
+}
+
+
+
+.table-row:hover .hover-btns {
+    display: flex;
+}
+
+
+@media screen and (max-width:1200px) {
+    .table-overflow {
+        overflow-x: auto;
+    }
+
+}
+
+@media screen and (max-width:990px) {
+    .gender {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .dob {
+        display: none;
+    }
+}
